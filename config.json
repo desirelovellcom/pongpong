@@ -1,0 +1,65 @@
+{
+  "game": {
+    "name": "PongPong",
+    "version": "1.0.0",
+    "license": "MIT"
+  },
+  "settings": {
+    "defaultPaddleSpeed": 5,
+    "defaultBallSpeed": 4,
+    "maxCustomBalls": 50,
+    "supportedImageFormats": ["jpg", "jpeg", "png", "gif", "webp"],
+    "maxImageSize": 5242880,
+    "ballRadius": 15,
+    "paddleWidth": 15,
+    "paddleHeight": 100
+  },
+  "themes": {
+    "neon": {
+      "paddleColors": ["#00ffff", "#ff00ff", "#ffbf00"],
+      "backgroundColor": "#000000",
+      "glowIntensity": 30
+    },
+    "retro": {
+      "paddleColors": ["#00ff00", "#ff0000", "#ffff00"],
+      "backgroundColor": "#001100",
+      "glowIntensity": 15
+    },
+    "minimal": {
+      "paddleColors": ["#ffffff", "#cccccc", "#999999"],
+      "backgroundColor": "#000000",
+      "glowIntensity": 5
+    }
+  },
+  "disintegration": {
+    "modes": {
+      "slow": 0.05,
+      "medium": 0.1,
+      "fast": 0.2
+    },
+    "effects": ["fade", "pixelate", "crack", "melt", "splat"]
+  },
+  "controls": {
+    "keyboard": {
+      "leftPaddleUp": "w",
+      "leftPaddleDown": "s",
+      "rightPaddleUp": "ArrowUp",
+      "rightPaddleDown": "ArrowDown",
+      "pause": " "
+    },
+    "touch": {
+      "enabled": true,
+      "sensitivity": 1.0
+    }
+  },
+  "audio": {
+    "enabled": true,
+    "volume": 0.1,
+    "sounds": {
+      "paddle": 220,
+      "wall": 110,
+      "score": 440,
+      "disintegrate": 80
+    }
+  }
+}
