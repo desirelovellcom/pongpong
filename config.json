@@ -1,65 +1,38 @@
 {
-  "game": {
-    "name": "PongPong",
-    "version": "1.0.0",
-    "license": "MIT"
-  },
-  "settings": {
-    "defaultPaddleSpeed": 5,
-    "defaultBallSpeed": 4,
-    "maxCustomBalls": 50,
-    "supportedImageFormats": ["jpg", "jpeg", "png", "gif", "webp"],
-    "maxImageSize": 5242880,
-    "ballRadius": 15,
-    "paddleWidth": 15,
-    "paddleHeight": 100
+  "theme": "neon_dark",
+  "ball_image": null,
+  "disintegration_mode": true,
+  "disintegration_hits": 15,
+  "ball_speed": 300,
+  "paddle_speed": 400,
+  "sound_enabled": true,
+  "controls": {
+    "player1": "W/S",
+    "player2": "UP/DOWN"
   },
   "themes": {
-    "neon": {
-      "paddleColors": ["#00ffff", "#ff00ff", "#ffbf00"],
-      "backgroundColor": "#000000",
-      "glowIntensity": 30
+    "neon_dark": {
+      "paddle_color": [0, 255, 255],
+      "background": [0, 0, 0],
+      "glow_intensity": 30
     },
     "retro": {
-      "paddleColors": ["#00ff00", "#ff0000", "#ffff00"],
-      "backgroundColor": "#001100",
-      "glowIntensity": 15
+      "paddle_color": [0, 255, 0],
+      "background": [0, 17, 0],
+      "glow_intensity": 15
     },
     "minimal": {
-      "paddleColors": ["#ffffff", "#cccccc", "#999999"],
-      "backgroundColor": "#000000",
-      "glowIntensity": 5
+      "paddle_color": [255, 255, 255],
+      "background": [0, 0, 0],
+      "glow_intensity": 5
     }
   },
   "disintegration": {
     "modes": {
-      "slow": 0.05,
-      "medium": 0.1,
-      "fast": 0.2
+      "slow": 25,
+      "medium": 15,
+      "fast": 8
     },
     "effects": ["fade", "pixelate", "crack", "melt", "splat"]
-  },
-  "controls": {
-    "keyboard": {
-      "leftPaddleUp": "w",
-      "leftPaddleDown": "s",
-      "rightPaddleUp": "ArrowUp",
-      "rightPaddleDown": "ArrowDown",
-      "pause": " "
-    },
-    "touch": {
-      "enabled": true,
-      "sensitivity": 1.0
-    }
-  },
-  "audio": {
-    "enabled": true,
-    "volume": 0.1,
-    "sounds": {
-      "paddle": 220,
-      "wall": 110,
-      "score": 440,
-      "disintegrate": 80
-    }
   }
 }
